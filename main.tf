@@ -28,7 +28,7 @@ depends_on=[
 	aws_key_pair.newKey
 ]
     content     = tls_private_key.keygen.private_key_pem
-    filename = "C:/Users/Dell/Downloads/webkey1.pem"
+    filename = "F:/Hybrid\ Cloud/Task4/webkey1.pem"
 }
 
 
@@ -266,7 +266,7 @@ resource "aws_instance" "wp-ins" {
 
 # MySQL instance creation
 resource "aws_instance" "mysql-ins" {
-  ami           = "ami-0525596cfb1f1d80d"
+  ami           = "ami-0b7cb0a20b7f923bd"
   instance_type = "t2.micro"
   key_name      = "webkey1"
   availability_zone = "ap-south-1b"
